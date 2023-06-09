@@ -21,3 +21,60 @@ public class countSubwithXor {
 		return cnt;
 	}    
 }
+
+
+// 4, 2, 2, 6, 4
+// 4=100
+// 2=10
+// 6=110
+// where k=6
+// ----
+// [
+
+// 0,1
+// ]
+// elem as 4
+// 4^k=2 did not come previous
+// [
+// 4,1
+// 0,1
+// ]
+// elem as 2
+// 4^2=6
+// 6^k=0(come previous)
+// cnt+1
+// [
+// 6,1
+// 4,1
+// 0,1
+// ]
+// elem as 2
+// 6^2=4
+// 4^k=2  did not come previous
+// [
+// 6,1
+// 4,2
+// 0,1
+// ]
+// elem as 6
+// 4^6=2
+// 2^k=4 come previous
+// cnt+getcount of 4=2
+// cnt+=2
+// [
+// 2,1
+// 6,1
+// 4,2
+// 0,1
+// ]
+// elem as 4
+// 2^4=6
+// 6^k=0 come previous
+// cnt+ get count of 0
+// cnt+=1
+
+
+
+
+
+
