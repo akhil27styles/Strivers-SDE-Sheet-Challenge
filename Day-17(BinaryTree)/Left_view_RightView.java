@@ -1,5 +1,16 @@
 // https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1#
 import java.util.*;
+class Node
+{
+    int data;
+    Node left, right;
+
+    Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
 class Tree
 {
     //Function to return list containing elements of left view of binary tree.
